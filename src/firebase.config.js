@@ -1,18 +1,20 @@
-import firebase from 'firebase/app'
-import 'firebase/firestore'
+import firebase from "firebase/app";
+import "firebase/firestore";
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyBniqkDp0UkyOLvpc5eOCebMcKE-LKzFAg",
-  authDomain: "leaderboard-db-3.firebaseapp.com",
-  projectId: "leaderboard-db-3",
-  storageBucket: "leaderboard-db-3.appspot.com",
-  messagingSenderId: "1096595444610",
-  appId: "1:1096595444610:web:e368adbc59b9ad517eb59b"
+  apiKey: "AIzaSyB__DSv1_tckHZWgiLRWchI5yla-SZKcPE",
+  authDomain: "algothon-2021.firebaseapp.com",
+  projectId: "algothon-2021",
+  storageBucket: "algothon-2021.appspot.com",
+  messagingSenderId: "258557273674",
+  appId: "1:258557273674:web:7ccbdfd8bf34aa263fe8b3",
+  measurementId: "G-Z1EJZYTKPZ",
 };
+
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
-const db=firebase.firestore();
+const db = firebase.firestore();
 
 export default db;

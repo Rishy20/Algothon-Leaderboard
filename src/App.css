@@ -1,21 +1,22 @@
 .Heading-container {
-  padding-top: 10vh;
+  padding-top: 15vh;
   text-align: center;
 }
 
 .Heading {
   color: azure;
-  font-family: 'Montserrat', sans-serif;
-  font-size: xx-large;
+  font-family: "Montserrat", sans-serif;
+  font-size: xxx-large;
 }
 
 .Table-container {
   margin: auto;
   width: 75%;
-  padding-top: 20vh;
+  padding-top: 10vh;
 }
 
-table tr td, table tr th{
+table tr td,
+table tr th {
   background-color: rgba(191, 189, 192, 0.3) !important;
   color: #fff;
   font-weight: 700;
