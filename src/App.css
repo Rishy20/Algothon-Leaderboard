@@ -1,6 +1,9 @@
 .Heading-container {
-  padding-top: 15vh;
+  padding-top: 12vh;
   text-align: center;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .Heading {
@@ -8,17 +11,55 @@
   font-family: "Montserrat", sans-serif;
   font-size: xxx-large;
 }
-
-.Table-container {
-  margin: auto;
-  width: 75%;
-  padding-top: 10vh;
+@media (max-width: 650px) {
+  .Heading {
+    font-size: xx-large;
+  }
 }
-
 table tr td,
 table tr th {
   background-color: rgba(191, 189, 192, 0.3) !important;
   color: #fff;
   font-weight: 700;
   font-size: large;
+}
+table tr th {
+  background-color: rgb(221, 221, 221) !important;
+  color: #000;
+  border-left: 1px solid #999999;
+  border-right: 1px solid #999999;
+}
+.tableFixHead {
+  margin: auto;
+  width: 80%;
+  text-align: center;
+  overflow-y: auto;
+  height: 68vh;
+  position: absolute;
+  top: 28vh;
+  left: 50%;
+  transform: translateX(-50%);
+  scrollbar-color: #78439b white; /* thumb and track color */
+  scrollbar-width: thin;
+}
+.tableFixHead::-webkit-scrollbar {
+  /* display: none; */
+}
+.tableFixHead thead th {
+  position: sticky;
+  top: 0;
+}
+
+.tableFixHead::-webkit-scrollbar {
+  width: 10px;
+}
+
+.tableFixHead::-webkit-scrollbar-track {
+  background-color: #e4e4e4;
+  border-radius: 100px;
+}
+
+.tableFixHead::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+  background-color: #78439b;
 }

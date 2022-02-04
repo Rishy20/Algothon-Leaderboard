@@ -38,34 +38,34 @@ function App() {
       <header className="App-header">
         <div className="Heading-container">
           <h1 className={"Heading"}>LEADERBOARD</h1>
-          <div className="Table-container">
-            <table className="table table-striped table-condensed table-bordered">
-              <thead>
-                <tr>
-                  <th scope="col">#</th>
-                  <th scope="col">Team Name</th>
-                  <th scope="col">Score</th>
-                </tr>
-              </thead>
-              <tbody>
-                {data.length > 0 ? (
-                  data.map((e, key) => (
-                    <tr key={key}>
-                      <th scope="row">{key + 1}</th>
-                      <td>{e.teamName}</td>
-                      <td>{e.score}</td>
-                    </tr>
-                  ))
-                ) : (
-                  <tr>
-                    <td colSpan={3}>Waiting for the results</td>
-                  </tr>
-                )}
-              </tbody>
-            </table>
-          </div>
         </div>
       </header>
+      <div className="tableFixHead">
+        <table className="table table-striped table-condensed table-bordered">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Team Name</th>
+              <th scope="col">Score</th>
+            </tr>
+          </thead>
+          <tbody>
+            {data.length > 0 ? (
+              data.map((e, key) => (
+                <tr key={key}>
+                  <td scope="row">{key + 1}</td>
+                  <td>{e.teamName}</td>
+                  <td>{e.score}</td>
+                </tr>
+              ))
+            ) : (
+              <tr>
+                <td colSpan={3}>Waiting for the results</td>
+              </tr>
+            )}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 }
