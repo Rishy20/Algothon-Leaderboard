@@ -53,7 +53,7 @@ function App() {
             {data.length > 0 ? (
               data.map((e, key) => (
                 <tr key={key}>
-                  <td scope="row">{key + 1}</td>
+                  <td>{key + 1}</td>
                   <td>{e.teamName}</td>
                   <td>{e.score}</td>
                 </tr>
